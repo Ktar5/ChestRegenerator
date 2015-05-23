@@ -1,0 +1,7 @@
+name: Restocket
+version: v1.0
+author: Ktar5
+main: me.ktar5.restocker
+load: POSTWORLD
+commands:
+  restocker:

@@ -1,0 +1,72 @@
+## Maximum and minimum boundaries for how many
+## items to put in a chest
+maxItems: 5
+minItems: 2
+
+##Regen time in seconds
+regenTime: 9999
+
+regensPerCycle: 50
+cycleTicks: 80
+
+locations:
+  world: world
+  high:
+    x: '0'
+    y: '10'
+    z: '0'
+  low:
+    x: '20'
+    y: '20'
+    z: '20'
+
+## The list of items possible to be put in
+items:
+ test:
+   ## For material names, check here
+   ## http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html
+   ## for reference
+   material: DIRT
+
+   ## The name that appears on the item
+   name: 'This is not a compass'
+
+   ## Can be left blank, is the lore
+   ## that appears on the item
+   lore:
+     - 'line 1'
+     - 'line 2'
+     - 'etc..'
+
+   ## The amount of this item to use
+   amount: 5
+
+   ## The damage value (the thing with the colon, like log:5, or the
+   ## damage done to the armor/tool)
+   damage: 4
+
+   ## The enchantments to be forced onto this item
+   ## NOTE: You can apply unsafe enchantments!!!!!
+   enchants:
+     - 'DAMAGE_ALL:5'
+     - 'FIRE_ASPECT:9999'
+
+   ## The weighted chance / relative probablility of
+   ## the item to be chosen
+   ## smaller the number, less likely itll be chosen,
+   ## defaults to 1
+   ## Can NOT have decimals or numbers less than 1
+   chance: 5
+ ktarHasSwag:
+   material: DIRT
+   name: 'THIS.. IS... DIRT'
+   lore:
+     - 'line 1'
+     - 'line 2'
+     - 'etc..'
+   amount: 5
+   damage: 4
+   enchants:
+     - 'DAMAGE_ALL:5'
+     - 'FIRE_ASPECT:9999'
+   chance: 1
